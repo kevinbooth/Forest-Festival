@@ -1,0 +1,15 @@
+﻿.form__input--file,
+%form__input--file {
+    border: none;
+    border-bottom: 1px solid $lightGray;
+    border-radius: 0;
+    color: $gray;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;  
+    width: 100%;
+}
+
+/* Overrides */
+input[type="file"] {
+    @extend %form__input--file !optional;
+}

@@ -1,0 +1,23 @@
+﻿.form__input--text,
+%form__input--text {
+    border: none;
+    border-bottom: 1px solid $lightGray;
+    border-radius: 0;
+    color: $gray;
+    font-size: 1.6rem;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+.form__input--text,
+%form__input--text {
+    color: $gray;
+}
+
+/* Overrides */
+input[type="text"] {
+    @extend %form__input--text !optional;
+}
+input[type="text"].WatermarkText {
+    @extend %form__input--text !optional;
+}

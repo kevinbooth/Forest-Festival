@@ -1,0 +1,10 @@
+﻿.form__input--radio,
+%form__input--radio {
+    position: relative;
+        top: -1px;
+}
+
+/* Overrides */
+input[type="radio"] {
+    @extend %form__input--radio !optional;
+}

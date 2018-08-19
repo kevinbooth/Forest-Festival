@@ -1,0 +1,10 @@
+﻿.form__input--checkbox,
+%form__input--checkbox {
+    position: relative;
+        top: -1px;
+}
+
+/* Overrides */
+input[type="checkbox"] {
+    @extend %form__input--checkbox !optional;
+}

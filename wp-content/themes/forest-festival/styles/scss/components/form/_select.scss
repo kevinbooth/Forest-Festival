@@ -1,0 +1,17 @@
+﻿.form__input--select,
+%form__input--select {
+    @extend %form__input--text !optional;
+    
+    border-radius: 0;
+    color: $gray;
+    font-size: 1.6rem;
+}
+
+/* Overrides */
+select {
+    @extend %form__input--select !optional;
+}
+
+select option:first-child {
+    @extend %form__input--text !optional;
+}

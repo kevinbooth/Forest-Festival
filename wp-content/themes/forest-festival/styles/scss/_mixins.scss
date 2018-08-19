@@ -1,0 +1,110 @@
+/* Custom Mixins */
+
+
+/* Core Mixins */
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin uncollapse-margins {
+	padding: 1px 0;
+}
+
+@mixin normalized-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+@mixin normalized-list-item {
+		list-style-image: none;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+}
+@mixin horizontal-list {
+	& > li {
+		display: inline-block;
+	}
+}
+
+@mixin border-radius($size) {
+	border-radius: $size; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+
+	/* useful if you don't want a bg color from leaking outside the border: */
+	background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
+
+}
+
+@mixin box-shadow($h-shadow: 3px, $v-shadow: 3px, $blur: 6px, $spread: -3px, $color: rgba(0, 0, 0, .2)){
+	-webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+	box-shadow: $h-shadow $v-shadow $blur $spread $color; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+}
+
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+@mixin center-align {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@mixin transform-translate-Y($offset: 0) {
+	-webkit-transform: translate(0, $offset);
+	-ms-transform: translate(0, $offset);
+	transform: translate(0, $offset);
+}
+
+@mixin transform-translate-X($offset: 0) {
+	-webkit-transform: translate($offset, 0);
+	-ms-transform: translate($offset, 0);
+	transform: translate($offset, 0);
+}
+
+@mixin transition-transform($speed: 350ms) {
+	-ms-transition: transform $speed ease-in-out;
+	-webkit-transition: transform $speed ease-in-out;
+	transition: transform $speed ease-in-out;
+
+    will-change: transform;
+}
+
+@mixin normalize-form-elements() {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+@mixin background-gradient($colorOne: $white, $colorTwo: $lightYellow, $stepOne: 50%, $stepTwo: 50%) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f2+50,ffffff+50 */
+	background: $colorOne; /* Old browsers */
+	background: -moz-linear-gradient(top, $colorTwo $stepOne, $colorOne $stepTwo); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $colorTwo $stepOne,$colorOne $stepTwo); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $colorTwo $stepOne,$colorOne $stepTwo); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$colorTwo, endColorstr=$colorOne,GradientType=0 ); /* IE6-9 */
+}
+
+@mixin leafHover($x: 0, $y: 0) {
+	-webkit-transform: scale(1.2) translate($x, $y);
+	-moz-transform: scale(1.2) translate($x, $y);
+	-ms-transform: scale(1.2) translate($x, $y);
+	transform: scale(1.2) translate($x, $y);
+}

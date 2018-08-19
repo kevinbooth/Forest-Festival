@@ -1,0 +1,14 @@
+﻿.form__input--textarea,
+%form__input--textarea {
+    border: 1px solid $lightGray;
+    border-radius: 0;
+    color: $gray;
+    font-size: 1.6rem;
+    height: 12rem;
+    width: 100%;
+}
+
+/* Overrides */
+textarea {
+    @extend %form__input--textarea !optional;
+}

@@ -1,0 +1,10 @@
+﻿.form__label,
+%form__label {
+    display: none;
+    font-size: 1.6rem;
+}
+
+/* Overrides */
+label {
+    @extend %form__label !optional;
+}

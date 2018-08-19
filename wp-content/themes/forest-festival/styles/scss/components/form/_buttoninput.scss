@@ -1,0 +1,13 @@
+﻿input[type="submit"],
+input[type="button"] {
+    @extend .button !optional;
+    @extend .button--light !optional;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus {
+
+}
+
