@@ -1,7 +1,47 @@
 .header {
-    padding: 1em 0;
+    @include box-shadow($h-shadow: 0, $v-shadow: 3px, $blur: 3px, $spread: 0, $color: #f2f2f2);
+}
+
+.header--mobile {
+}
+
+.header__mobile-content {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+
+    padding: .8rem 0;
 }
 
 .header--desktop {
+    display: none;
     max-height: 10rem;
+    padding: 1rem 0;
+}
+
+.header__logo {
+    display: block;
+}
+
+.header-burger {
+
+}
+
+/* Hero styles */
+
+.hero {
+
+}
+
+.hero__copy {
+    @include header_font;
+
+    color: $white;
+    font-size: 4rem;
+    padding: 8rem 0;
+    text-align: center;
+
+    @media screen and (min-width: 1000px) {
+        padding: 15rem 0;
+    }
 }
