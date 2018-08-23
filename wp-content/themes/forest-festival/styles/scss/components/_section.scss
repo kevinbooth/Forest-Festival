@@ -9,11 +9,15 @@
 .section--services {
 
     .container {
-        @include box-shadow(-5px, 5px, 15px, -5px);
-    
         background-color: $white;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
         position: relative;
-        top: -60px;
-        padding: 8rem 0;
+
+        @media screen and (min-width: 400px) {
+            @include box-shadow(-5px, 5px, 15px, -5px);
+        
+            top: -60px;
+        }
     }
 }

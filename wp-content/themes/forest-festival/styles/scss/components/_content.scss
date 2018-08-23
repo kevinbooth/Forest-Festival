@@ -14,7 +14,7 @@
 .content__sign {
     @include bold_font;
 
-    background-color: $green;
+    background-color: $darkBlue;
     color: $white;
     display: inline-block;
     font-size: 3rem;
@@ -29,7 +29,7 @@
     border-color: transparent $darkGreen transparent transparent;
     position: absolute;
     left: 0;
-    top: 49px;
+    top: 100%;
 }
 
 .content__sign::after {
@@ -39,5 +39,5 @@
     border-color: transparent transparent transparent $darkGreen;
     position: absolute;
     right: 0;
-    top: 49px;
+    top: 100%;
 }
