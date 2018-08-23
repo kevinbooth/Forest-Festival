@@ -66,11 +66,29 @@
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
-                    <div class="content__container">
-                        <div class="content__sign-container">
-                            <div class="content__sign">services</div>
-                        </div>
+                    <div class="content__sign-container">
+                        <div class="content__sign">services</div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns">
+                    <svg height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke-width="3" fill="#40b782" class="content__circle" />
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="content__circle-text" >html</text>
+                    </svg>
+                </div>
+                <div class="four columns">
+                    <svg height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke-width="3" fill="#40b782" class="content__circle" />
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="content__circle-text" >cms</text>
+                    </svg>
+                </div>
+                <div class="four columns">
+                    <svg height="100" width="100">
+                        <circle cx="50" cy="50" r="40" stroke-width="3" fill="#40b782" class="content__circle" />
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="content__circle-text" >email</text>
+                    </svg>
                 </div>
             </div>
         </div>

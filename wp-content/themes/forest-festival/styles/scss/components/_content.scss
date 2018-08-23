@@ -2,12 +2,8 @@
 
 }
 
-.content__container {
-    margin: 0 auto;
-    max-width: 1020px;
-}
-
 .content__sign-container {
+    padding-bottom: 6rem;
     text-align: center;
 }
 
@@ -40,4 +36,23 @@
     position: absolute;
     right: 0;
     top: 100%;
+}
+
+.content__circle {
+    position: relative;
+}
+
+.content__circle::before {
+    content:"";
+    border-style: solid;
+    border-width: 0px 30px 15px 0;
+    border-color: transparent $darkGreen transparent transparent;
+    position: absolute;
+    left: 0;
+    top: 100%;    
+}
+
+.content__circle-text {
+    font: bold 28px monospace;
+    fill: $white;
 }
