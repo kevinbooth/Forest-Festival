@@ -1,0 +1,43 @@
+.content {
+
+}
+
+.content__container {
+    margin: 0 auto;
+    max-width: 1020px;
+}
+
+.content__sign-container {
+    text-align: center;
+}
+
+.content__sign {
+    @include bold_font;
+
+    background-color: $green;
+    color: $white;
+    display: inline-block;
+    font-size: 3rem;
+    padding: .5rem 3rem;
+    position: relative;
+}
+
+.content__sign::before {
+    content:"";
+    border-style: solid;
+    border-width: 0px 30px 15px 0;
+    border-color: transparent $darkGreen transparent transparent;
+    position: absolute;
+    left: 0;
+    top: 49px;
+}
+
+.content__sign::after {
+    content:"";
+    border-style: solid;
+    border-width: 0 0 15px 30px;
+    border-color: transparent transparent transparent $darkGreen;
+    position: absolute;
+    right: 0;
+    top: 49px;
+}

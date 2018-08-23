@@ -2,6 +2,7 @@
 
 /** Colors **/
 $white: #fff;
+$lightestGray: #f2f2f2;
 $lighterGray: #e9e9e9;
 $lightGray: #d7d7d7;
 $gray: #525050;
@@ -10,16 +11,17 @@ $black: #000000;
 
 $red: #ec2f23;
 $darkRed: #ab1d21;
-$green: #54944a;
-$darkGreen: #499e49;
+$green: #40b782;
+$darkGreen: #379683;
 $yellow: #ffd000;
 $blue: #1125aa;
 $lightBlue: #297ce0;
-$darkBlue: #101d4e;
+$darkBlue: #05386b;
 
 
 
 /* Color settings */
+$background-color: $lightestGray;
 $font-color: $darkGray;
 $primary-color: $lightGray;
 

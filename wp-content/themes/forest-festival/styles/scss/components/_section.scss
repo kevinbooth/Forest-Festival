@@ -3,5 +3,17 @@
 }
 
 .section--hero {
-    background-color: #5cdb95;
+    background: $green;
+}
+
+.section--services {
+
+    .container {
+        @include box-shadow(-5px, 5px, 15px, -5px);
+    
+        background-color: $white;
+        position: relative;
+        top: -60px;
+        padding: 8rem 0;
+    }
 }

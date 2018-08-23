@@ -50,8 +50,27 @@
     <div class="section section--hero">
         <div class="container">
             <div class="row">
-                <div class="twelve columns">
+                <div class="six columns">
                     <div class="hero__copy">affordable, rubust web development by kevin booth</div>
+                </div>
+                <div class="six columns">
+                    <div class="hero__loader-wrapper">
+                        <div class="hero__loader"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section--services">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="content__container">
+                        <div class="content__sign-container">
+                            <div class="content__sign">services</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

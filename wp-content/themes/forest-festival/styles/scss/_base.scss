@@ -5,6 +5,7 @@ html {
 body {
 	@include regular_font;
     
+    background-color: $background-color;
     color: $font-color;
     font-size: 1.6em;
     height: 100%;
